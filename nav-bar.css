@@ -1,0 +1,111 @@
+#nav-bar{
+    background-color: black;opacity: 0.8;
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+}
+.nav-logo{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:flex-start;
+    align-items: center;
+    text-align: center;
+    width: 350px;
+    font-size: 30px;
+    margin: 0;
+    padding-left: 10px;
+    height: 60px;
+}
+.nav-logo p{
+color: orangered;
+}
+.white{
+    color: white;
+}
+.nav-content{
+    margin-right: 30PX;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    height: auto;
+    position: absolute;
+    width: 60%;
+    height: auto;
+    right: 0;
+    top: 0;
+   
+}
+.nav-content a{
+    width: 60px;
+    font-size:22px ;
+    color: whitesmoke;
+    width: 100px;
+    display: block;
+    text-decoration: none;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.nav-content a:hover{
+    color: orangered;
+    font-size:20px ;
+    font-weight: bold;
+}
+.menu-mobile-icon{
+    display: none;
+    position: absolute;
+    top: 0;
+    right:0;
+    color: white;
+    width: 60px;
+    text-align: center;
+    font-size: 16px;
+line-height: 0.7;
+height: 50px;
+}
+.menu-mobile-icon:hover{
+    line-height: 0.6;
+    color: orangered;
+}
+#navbar-mobile{
+    overflow-x: hidden;
+    display: none;
+    height: auto;
+    width: auto;
+    margin-top: 60px;
+    position: absolute;
+    width: 100%;
+    background-color: black; opacity:0.7;
+}
+#navbar-mobile a{
+    padding: 12px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    width: 100%;
+    border-bottom:1px solid whitesmoke;
+      }
+      #navbar-mobile a:hover{
+        color: orangered;
+      }
+@media (max-width:700px){
+    .nav-content{
+        display: none;
+    }
+    .menu-mobile-icon{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+}
+}

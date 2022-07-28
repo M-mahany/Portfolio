@@ -1,0 +1,474 @@
+body{
+    margin: 0;
+    background-image: url(https://cutewallpaper.org/21/web-development-wallpaper/Sumedha-Softech-Mobile-App,-Web-Design-and-Development-.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+}
+.body-content{
+    overflow-x: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.animation-type{
+    width: auto;
+    margin-top: 250px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+.animation-type h1{
+    padding: 2px;
+    color: white;
+    font-size: 80px;
+    border-right: 2px solid orangered;
+    height: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    letter-spacing: .15em;
+    animation: 
+    typing 4s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+@keyframes typing{
+    from{width: 0;}
+    to{width: 100%}
+  }
+  @keyframes blink-caret{
+    from, to { border-color: transparent }
+    50% { border-color: orangered }
+  }
+  @media (max-width:1200px){
+    .animation-type h1{
+        font-size: 55px;
+    }
+}
+@media (max-width:800px){
+        .animation-type h1{
+            font-size: 32px;
+        }
+        #Third-div .third-div-hp{
+            font-size: 32px;
+}
+}
+.mainbttn-div{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.mainbttn-div a{
+    font-size: 32px;
+    padding: 8px;
+    color: white;
+    display: block;
+    border: 1.5px solid white;
+    margin-top: 38px;
+    margin-left: 12px;
+    margin-right: 12px;
+    text-decoration: none;
+}
+.mainbttn-div a:last-child{
+    background-color: orangered;
+    border: 1.5px solid orangered;
+}
+.mainbttn-div a:hover{
+    background-color: orangered;
+    border: 1px solid orangered;
+}
+.Phead{
+    text-align: center;
+    color: white;
+    font-size: 26px;
+    width: auto;
+}
+.body2{
+    margin:0px;
+    background-color: rgb(0, 0, 0);
+    height: auto;
+    padding-bottom: 60px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: column;
+}
+h2{
+    margin-top: 100px;
+    color: orangered;
+    margin-bottom: 0;
+}
+.p1{
+    font-weight: bold;
+    margin-top: 15px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid orangered;
+    font-size: 40px;
+    color: white;
+}
+.p2{
+    line-height: 1.8;
+    padding: 5px;
+    text-align: center;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    font-weight: normal;
+    font-size: 24px;
+    color: white; 
+}
+#number-count{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+}
+#number-count div{
+    width:250px;
+    padding-bottom: 18px;
+    border-bottom: 2px solid orangered;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#number-count p{
+    margin: 5px;
+color: white;
+font-size: 80px;
+font-weight: bold;
+}
+#number-count p:last-child{
+    color: orangered;
+    font-size: 30px;
+    font-weight: normal;
+}
+#Third-div{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin:0px;
+    background-color: white;
+    height: auto;
+    padding-bottom: 100px;
+}
+h3{
+    margin-top: 40px;
+    color: orangered;
+    margin-bottom: 5px;
+}
+.third-div-p{
+    padding-bottom: 80px;
+    border-bottom: 1px solid orangered;
+    margin-top: 5px;
+    font-size: 50px;
+    font-weight: bold;
+    width:minmax(auto,600px);
+}
+#Third-div-container{
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#Third-div-container .box{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    width:450px;
+    height: minmax(auto,300px);
+}
+.box p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 18px;
+font-size: 28px;
+font-weight: bold;
+}
+.box p:last-child{
+    margin-top: 0;
+    color: rgb(63, 62, 62);
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.6;
+    }
+    .box img{
+        display: block;
+        margin-top: 9px;
+    }
+    .reveal{
+        position: relative;
+        transform: translateY(150px);
+        opacity: 0;
+        transition: 1.2s all ease;
+      }
+      .reveal.active{
+        transform: translateY(0);
+        opacity: 1;
+      }
+      #project-div{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        width: 100%;
+        border: 1px solid black;
+        background-color: black;opacity: 0.9;
+        height: auto;
+        padding: 5px;
+        padding-bottom: 100px;
+      }
+      .colcontainer{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+      }
+      .flexcol1{
+        padding-left: 25px;
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        height: 220px;
+    }
+.headingp1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;opacity: 0.9;
+    text-shadow: whitesmoke 1px 0 10px;opacity: 0.4;
+    font-size:75px;
+    font-weight: bold;
+}
+h4{
+    font-size: 22px;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 105px;
+    color: orangered;
+}
+.headingp2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    margin-top: 125px;
+    color: white;
+    font-size:40px;
+    font-weight: bold;
+}
+.headingp3{
+    border-left: 1.5px solid orangered;
+    width:600px;
+    padding: 15px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size:22px;
+}
+.proj-cont-boxes{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.proj-box{
+    padding: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid whitesmoke;
+    height: 330px;
+    width: 280px;
+    background-color: rgb(31, 31, 31);
+}
+.proj-box:hover{
+    background-color: orangered;
+    border: 1px solid orangered;
+}
+.proj-box img{
+    box-shadow:rgb(3, 3, 3) 2px 0 10px;
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.proj-box p{
+    font-weight: bold;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 30px;
+}
+#contact-us{
+    padding-bottom: 100px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: whitesmoke;opacity: 0.9;
+}
+h5{
+    font-weight: bold;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    color: orangered;
+    font-size: 22px;
+}
+.ptitile{
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 80%;
+    text-align: center;
+    margin-top: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: black;
+    font-size: 58px;
+}
+#contact-container{
+    height: auto;
+    background-color:rgb(168, 168, 168);
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+}
+#contact-container .box1{
+    padding-top: 50px;
+    padding: 30px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+#contact-container .box1 p{
+    padding-left:10px;
+    margin-bottom: 60px;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#contact-container .box2{
+    padding-top: 50px;
+    background-color:rgb(138, 136, 136);
+    width: 40%;
+    padding-left: 25px;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 50px;
+  }
+  #contact-container .box2 p{
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+#contact-container .box2 .orangered{
+    margin-top: 50px;
+  color: orangered;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#contact-container .box2 .orangered-body{
+    color: rgb(41, 41, 41);
+    width: 80%;
+}
+label{
+    color:rgb(41, 41, 41);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+input{
+    color: white;
+    font-size: 18px;
+    width: 100%;
+background: none;
+border: 0px;
+border-bottom:  1px solid rgb(209, 209, 209);
+height: 30px;
+margin-bottom: 40px;
+}
+input:focus{
+outline-width: 0;
+border-bottom:  1px solid white;
+    }
+    #fmessage{
+        height: 90px;
+        color: white;
+        font-size: 18px;
+        width: 100%;
+    background: none;
+    border: 0px;
+    border-bottom:  1px solid rgb(209, 209, 209);
+    }
+    #fmessage:focus{
+        outline-width: 0;
+border-bottom:  1px solid white;
+    }
+    .form_button{
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 30px;
+        color: white;
+        background-color: orangered;
+        border: none;
+        width: 100%;
+        height: 50px;
+    }
+    .form_button:hover{
+        background-color: transparent;
+        color: orangered;
+        border: 1px solid orangered;
+    }
+    #footer{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content:space-evenly;
+        color: white;
+        background-color: black;
+    }
+    .fbox{
+        padding-top: 8px;
+width: 500px;
+display: flex;
+flex-wrap: nowrap;
+flex-direction: column;
+width: 450px;
+    }
+    .fbox3{
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+        width: 100%;
+    }
+    .fbox3 p{
+  padding: 7px;      
+    }
+    .fbox3 p:last-child{
+        border-left: 1px solid orangered;
+    }
